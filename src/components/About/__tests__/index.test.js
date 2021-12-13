@@ -7,11 +7,11 @@ afterEach(cleanup);
 
 describe('About component', () => {
     // renders About test
-    // first test
+    // baseline test
     it('renders', () => {
         render(<About />);
     });
-    // second test (test case (compares snapshots))
+    // snapshot test
     it('matches snapshot DOM node structure', () => {
         const { asFragment } = render(<About />);
 
