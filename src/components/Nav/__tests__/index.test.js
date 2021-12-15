@@ -10,13 +10,17 @@ const categories = [
 ]
 const mockCurrentCategory = jest.fn();
 const mockSetCurrentCategory = jest.fn();
+const mockContactSelected = jest.fn();
+const mockSetContactSelected = jest.fn();
 
-describe('Nav component', () => {
+describe('Nav component renders', () => {
     it('renders', () => {
         render(<Nav
             categories={categories}
             setetCurrentCategory={mockSetCurrentCategory}
             currentCategory={mockCurrentCategory}
+            contactSelected={mockContactSelected}
+            setContactSelected={mockSetContactSelected}
         />);
     });
 
@@ -26,6 +30,8 @@ describe('Nav component', () => {
                 categories={categories}
                 setetCurrentCategory={mockSetCurrentCategory}
                 currentCategory={mockCurrentCategory}
+                contactSelected={mockContactSelected}
+                setContactSelected={mockSetContactSelected}
             />
         );
 
@@ -40,6 +46,8 @@ describe('emoji is visible', () => {
                 categories={categories}
                 setetCurrentCategory={mockSetCurrentCategory}
                 currentCategory={mockCurrentCategory}
+                contactSelected={mockContactSelected}
+                setContactSelected={mockSetContactSelected}
             />
         );
 
@@ -54,6 +62,8 @@ describe('links are visible', () => {
                 categories={categories}
                 setetCurrentCategory={mockSetCurrentCategory}
                 currentCategory={mockCurrentCategory}
+                contactSelected={mockContactSelected}
+                setContactSelected={mockSetContactSelected}
             />
         );
 
